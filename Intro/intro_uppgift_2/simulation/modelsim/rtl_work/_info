@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim
 Eintro_uppgift_2
-Z1 w1502962611
+Z1 w1502975864
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -17,13 +17,13 @@ Z4 8C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd
 Z5 FC:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd
 l0
 L13
-VCU8GcB?^@CXTmKT00e<UT0
-!s100 >`LSRFA1OWW5mo2Yi9HBb2
+Vm;DaO4Rojz7oh=cjA2o?01
+!s100 67j=nfMKX>2j[g02C]]ld3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1502973137
+Z7 !s110 1502976129
 !i10b 1
-Z8 !s108 1502973136.000000
+Z8 !s108 1502976129.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
 Z10 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
-DEx4 work 15 intro_uppgift_2 0 22 CU8GcB?^@CXTmKT00e<UT0
-l24
-L23
-VjD6IU_bH5O]2FiDT@5hTF2
-!s100 L8;k6hIj]WcR;AUEF3Xbz1
+DEx4 work 15 intro_uppgift_2 0 22 m;DaO4Rojz7oh=cjA2o?01
+l25
+L24
+Vb>IIR3RWGG7TfFC4R7`2h2
+!s100 ^H:@RY<`lV_4;DgO0Ze?S0
 R6
 31
 R7
@@ -48,7 +48,7 @@ R10
 R11
 R12
 Eintro_uppgift_2_vhd_tst
-Z13 w1502971671
+Z13 w1502976113
 R2
 R3
 R0
@@ -62,9 +62,9 @@ R6
 31
 R7
 !i10b 1
-Z16 !s108 1502973137.000000
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
-Z18 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+Z17 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
 !i113 1
 R11
 R12
@@ -72,17 +72,17 @@ Aintro_uppgift_2_arch
 R2
 R3
 DEx4 work 23 intro_uppgift_2_vhd_tst 0 22 2lZnJ1z8iTd=Uk6DL:J?z1
-l44
+l46
 L33
-VaJODEIMC@:XDZF6@i63HQ2
-!s100 Qz:o5b@6M1?EIFNeh]=UG0
+VF4oRjkd]bX7hmTF93fDf=2
+!s100 ;@8O<a[Qn;]HR<ZS1C>9:1
 R6
 31
 R7
 !i10b 1
+R8
 R16
 R17
-R18
 !i113 1
 R11
 R12

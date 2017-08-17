@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
--- DATE "08/17/2017 14:39:30"
+-- DATE "08/17/2017 15:18:43"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -89,13 +89,15 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	intro_uppgift_2 IS
     PORT (
 	KEY_1_pin : IN std_logic;
-	LED_0_pin : BUFFER std_logic
+	KEY_2_pin : IN std_logic;
+	LED_0_pin : OUT std_logic
 	);
 END intro_uppgift_2;
 
 -- Design Ports Information
 -- LED_0_pin	=>  Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
 -- KEY_1_pin	=>  Location: PIN_B8,	 I/O Standard: 3.3 V Schmitt Trigger,	 Current Strength: Default
+-- KEY_2_pin	=>  Location: PIN_A7,	 I/O Standard: 3.3 V Schmitt Trigger,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF intro_uppgift_2 IS
@@ -109,6 +111,7 @@ SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
 SIGNAL ww_KEY_1_pin : std_logic;
+SIGNAL ww_KEY_2_pin : std_logic;
 SIGNAL ww_LED_0_pin : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ : std_logic_vector(4 DOWNTO 0);
@@ -118,7 +121,9 @@ SIGNAL \~QUARTUS_CREATED_ADC1~~eoc\ : std_logic;
 SIGNAL \~QUARTUS_CREATED_ADC2~~eoc\ : std_logic;
 SIGNAL \LED_0_pin~output_o\ : std_logic;
 SIGNAL \KEY_1_pin~input_o\ : std_logic;
-SIGNAL \ALT_INV_KEY_1_pin~input_o\ : std_logic;
+SIGNAL \KEY_2_pin~input_o\ : std_logic;
+SIGNAL \LED_0_pin~0_combout\ : std_logic;
+SIGNAL \ALT_INV_LED_0_pin~0_combout\ : std_logic;
 
 COMPONENT hard_block
     PORT (
@@ -130,6 +135,7 @@ END COMPONENT;
 BEGIN
 
 ww_KEY_1_pin <= KEY_1_pin;
+ww_KEY_2_pin <= KEY_2_pin;
 LED_0_pin <= ww_LED_0_pin;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
@@ -138,14 +144,14 @@ ww_devpor <= devpor;
 \~QUARTUS_CREATED_ADC1~_CHSEL_bus\ <= (\~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\);
 
 \~QUARTUS_CREATED_ADC2~_CHSEL_bus\ <= (\~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\ & \~QUARTUS_CREATED_GND~I_combout\);
-\ALT_INV_KEY_1_pin~input_o\ <= NOT \KEY_1_pin~input_o\;
+\ALT_INV_LED_0_pin~0_combout\ <= NOT \LED_0_pin~0_combout\;
 auto_generated_inst : hard_block
 PORT MAP (
 	devoe => ww_devoe,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X1_Y1_N24
+-- Location: LCCOMB_X44_Y48_N16
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -166,7 +172,7 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => \ALT_INV_KEY_1_pin~input_o\,
+	i => \ALT_INV_LED_0_pin~0_combout\,
 	devoe => ww_devoe,
 	o => \LED_0_pin~output_o\);
 
@@ -181,6 +187,33 @@ GENERIC MAP (
 PORT MAP (
 	i => ww_KEY_1_pin,
 	o => \KEY_1_pin~input_o\);
+
+-- Location: IOIBUF_X49_Y54_N29
+\KEY_2_pin~input\ : fiftyfivenm_io_ibuf
+-- pragma translate_off
+GENERIC MAP (
+	bus_hold => "false",
+	listen_to_nsleep_signal => "false",
+	simulate_z_as => "z")
+-- pragma translate_on
+PORT MAP (
+	i => ww_KEY_2_pin,
+	o => \KEY_2_pin~input_o\);
+
+-- Location: LCCOMB_X46_Y53_N24
+\LED_0_pin~0\ : fiftyfivenm_lcell_comb
+-- Equation(s):
+-- \LED_0_pin~0_combout\ = (\KEY_1_pin~input_o\) # (\KEY_2_pin~input_o\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111111111001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	datab => \KEY_1_pin~input_o\,
+	datad => \KEY_2_pin~input_o\,
+	combout => \LED_0_pin~0_combout\);
 
 -- Location: UNVM_X0_Y40_N40
 \~QUARTUS_CREATED_UNVM~\ : fiftyfivenm_unvm

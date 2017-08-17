@@ -34,10 +34,12 @@ ARCHITECTURE intro_uppgift_2_arch OF intro_uppgift_2_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
 SIGNAL KEY_1_pin : STD_LOGIC;
+SIGNAL KEY_2_pin : STD_LOGIC;
 SIGNAL LED_0_pin : STD_LOGIC;
 COMPONENT intro_uppgift_2
 	PORT (
 	KEY_1_pin : IN STD_LOGIC;
+	KEY_2_pin : IN STD_LOGIC;
 	LED_0_pin : OUT STD_LOGIC
 	);
 END COMPONENT;
@@ -46,6 +48,7 @@ BEGIN
 	PORT MAP (
 -- list connections between master ports and signals
 	KEY_1_pin => KEY_1_pin,
+	KEY_2_pin => KEY_2_pin,
 	LED_0_pin => LED_0_pin
 	);
 init : PROCESS                                               
@@ -56,11 +59,25 @@ WAIT;
 END PROCESS init;                                           
 always : PROCESS                                                                              
 BEGIN                                                         
-        -- test case 1, btn not pressed -> out is 1
-		KEY_1_pin <= '1';
-		WAIT for 1 ns;
-		-- test case 2, btn pressed -> out is 0
+        -- test case 1, both btns pressed, LED is on
 		KEY_1_pin <= '0';
+		KEY_2_pin <= '0';
+		WAIT for 1 ns;
+		
+		-- test case 2, btn1 pressed, btn2 not pressed, LED is off
+		KEY_1_pin <= '0';
+		KEY_2_pin <= '1';
+		WAIT for 1 ns;
+		
+		--test case 3, btn 1 not pressed, btn2 pressed, LED is off
+		KEY_1_pin <= '1';
+		KEY_2_pin <= '0';
+		WAIT for 1 ns;
+		
+		--test case 4, no btn is pressed, LED is off
+		KEY_1_pin <= '1';
+		KEY_2_pin <= '1';
+	
 		WAIT;
 			
 WAIT;                                                        

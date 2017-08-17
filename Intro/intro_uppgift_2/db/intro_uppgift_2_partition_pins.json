@@ -10,6 +10,10 @@
 				{
 					"name" : "KEY_1_pin",
 					"strict" : false
+				},
+				{
+					"name" : "KEY_2_pin",
+					"strict" : false
 				}
 			]
 		}

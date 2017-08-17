@@ -1,5 +1,5 @@
 Analysis & Synthesis report for intro_uppgift_2
-Thu Aug 17 14:38:46 2017
+Thu Aug 17 15:18:11 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 17 14:38:46 2017       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 17 15:18:10 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; intro_uppgift_2                             ;
 ; Top-level Entity Name              ; intro_uppgift_2                             ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 1                                           ;
+;     Total combinational functions  ; 1                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 2                                           ;
+; Total pins                         ; 3                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -173,35 +173,36 @@ agreement for further details.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-;                                             ;                  ;
-; Total combinational functions               ; 0                ;
-; Logic element usage by number of LUT inputs ;                  ;
-;     -- 4 input functions                    ; 0                ;
-;     -- 3 input functions                    ; 0                ;
-;     -- <=2 input functions                  ; 0                ;
-;                                             ;                  ;
-; Logic elements by mode                      ;                  ;
-;     -- normal mode                          ; 0                ;
-;     -- arithmetic mode                      ; 0                ;
-;                                             ;                  ;
-; Total registers                             ; 0                ;
-;     -- Dedicated logic registers            ; 0                ;
-;     -- I/O registers                        ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 2                ;
-;                                             ;                  ;
-; Embedded Multiplier 9-bit elements          ; 0                ;
-;                                             ;                  ;
-; Maximum fan-out node                        ; LED_0_pin~output ;
-; Maximum fan-out                             ; 1                ;
-; Total fan-out                               ; 3                ;
-; Average fan-out                             ; 0.75             ;
-+---------------------------------------------+------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 1           ;
+;                                             ;             ;
+; Total combinational functions               ; 1           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 1           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 1           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 3           ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; LED_0_pin~0 ;
+; Maximum fan-out                             ; 1           ;
+; Total fan-out                               ; 6           ;
+; Average fan-out                             ; 0.86        ;
++---------------------------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -209,7 +210,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
-; |intro_uppgift_2           ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 2    ; 0            ; 0          ; |intro_uppgift_2    ; intro_uppgift_2 ; work         ;
+; |intro_uppgift_2           ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 3    ; 0            ; 0          ; |intro_uppgift_2    ; intro_uppgift_2 ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,13 +235,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 2                           ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
+; boundary_port         ; 3                           ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
 ;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 2.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -249,7 +251,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -259,23 +261,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Aug 17 14:38:25 2017
+    Info: Processing started: Thu Aug 17 15:17:47 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off intro_uppgift_2 -c intro_uppgift_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file intro_uppgift_2.vhd
-    Info (12022): Found design unit 1: intro_uppgift_2-BEHAVIORAL File: C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd Line: 23
+    Info (12022): Found design unit 1: intro_uppgift_2-BEHAVIORAL File: C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd Line: 24
     Info (12023): Found entity 1: intro_uppgift_2 File: C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd Line: 13
 Info (12127): Elaborating entity "intro_uppgift_2" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
+Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
     Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 676 megabytes
-    Info: Processing ended: Thu Aug 17 14:38:47 2017
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 673 megabytes
+    Info: Processing ended: Thu Aug 17 15:18:11 2017
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:50
 
 

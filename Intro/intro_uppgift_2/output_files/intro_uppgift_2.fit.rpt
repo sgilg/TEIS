@@ -1,5 +1,5 @@
 Fitter report for intro_uppgift_2
-Thu Aug 17 14:39:08 2017
+Thu Aug 17 15:18:24 2017
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -29,13 +29,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
  21. LAB Logic Elements
  22. LAB Signals Sourced
  23. LAB Signals Sourced Out
- 24. I/O Rules Summary
- 25. I/O Rules Details
- 26. I/O Rules Matrix
- 27. Fitter Device Options
- 28. Operating Settings and Conditions
- 29. Fitter Messages
- 30. Fitter Suppressed Messages
+ 24. LAB Distinct Inputs
+ 25. I/O Rules Summary
+ 26. I/O Rules Details
+ 27. I/O Rules Matrix
+ 28. Fitter Device Options
+ 29. Operating Settings and Conditions
+ 30. Fitter Messages
+ 31. Fitter Suppressed Messages
 
 
 
@@ -62,18 +63,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Aug 17 14:39:08 2017       ;
+; Fitter Status                      ; Successful - Thu Aug 17 15:18:24 2017       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; intro_uppgift_2                             ;
 ; Top-level Entity Name              ; intro_uppgift_2                             ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1 / 49,760 ( < 1 % )                        ;
-;     Total combinational functions  ; 1 / 49,760 ( < 1 % )                        ;
+; Total logic elements               ; 2 / 49,760 ( < 1 % )                        ;
+;     Total combinational functions  ; 2 / 49,760 ( < 1 % )                        ;
 ;     Dedicated logic registers      ; 0 / 49,760 ( 0 % )                          ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 2 / 360 ( < 1 % )                           ;
+; Total pins                         ; 3 / 360 ( < 1 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -163,8 +164,8 @@ agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 24 ) ; 0.00 % ( 0 / 24 )          ; 0.00 % ( 0 / 24 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 24 ) ; 0.00 % ( 0 / 24 )          ; 0.00 % ( 0 / 24 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 27 ) ; 0.00 % ( 0 / 27 )          ; 0.00 % ( 0 / 27 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 27 ) ; 0.00 % ( 0 / 27 )          ; 0.00 % ( 0 / 27 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -187,7 +188,7 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 8 )      ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 11 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -203,28 +204,28 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 1 / 49,760 ( < 1 % )  ;
-;     -- Combinational with no register       ; 1                     ;
+; Total logic elements                        ; 2 / 49,760 ( < 1 % )  ;
+;     -- Combinational with no register       ; 2                     ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 0                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
 ;     -- 4 input functions                    ; 0                     ;
 ;     -- 3 input functions                    ; 0                     ;
-;     -- <=2 input functions                  ; 1                     ;
+;     -- <=2 input functions                  ; 2                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 1                     ;
+;     -- normal mode                          ; 2                     ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 0 / 51,509 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 49,760 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )     ;
 ;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 1 / 3,110 ( < 1 % )   ;
+; Total LABs:  partially or completely used   ; 2 / 3,110 ( < 1 % )   ;
 ; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 2 / 360 ( < 1 % )     ;
+; I/O pins                                    ; 3 / 360 ( < 1 % )     ;
 ;     -- Clock pins                           ; 0 / 8 ( 0 % )         ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )       ;
 ;                                             ;                       ;
@@ -243,11 +244,11 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )         ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.2%    ;
+; Peak interconnect usage (total/H/V)         ; 0.0% / 0.0% / 0.1%    ;
 ; Maximum fan-out                             ; 17                    ;
 ; Highest non-global fan-out                  ; 17                    ;
-; Total fan-out                               ; 14                    ;
-; Average fan-out                             ; 0.58                  ;
+; Total fan-out                               ; 17                    ;
+; Average fan-out                             ; 0.63                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -260,29 +261,29 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 1 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 1                   ; 0                              ;
+; Total logic elements                        ; 2 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 2                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;     -- Combinational with a register        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
 ;     -- 4 input functions                    ; 0                   ; 0                              ;
 ;     -- 3 input functions                    ; 0                   ; 0                              ;
-;     -- <=2 input functions                  ; 1                   ; 0                              ;
+;     -- <=2 input functions                  ; 2                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 1                   ; 0                              ;
+;     -- normal mode                          ; 2                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 0                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 49760 ( 0 % )   ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 1 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 2 / 3110 ( < 1 % )  ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 2                   ; 0                              ;
+; I/O pins                                    ; 3                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )     ; 0 / 288 ( 0 % )                ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
@@ -296,7 +297,7 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 20                  ; 8                              ;
+;     -- Total Connections                    ; 23                  ; 8                              ;
 ;     -- Registered Connections               ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -304,7 +305,7 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
-;     -- Input Ports                          ; 1                   ; 0                              ;
+;     -- Input Ports                          ; 2                   ; 0                              ;
 ;     -- Output Ports                         ; 1                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
@@ -330,6 +331,7 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard          ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 ; KEY_1_pin ; B8    ; 7        ; 46           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
+; KEY_2_pin ; A7    ; 7        ; 49           ; 54           ; 28           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3 V Schmitt Trigger ; --                        ; User                 ; 0         ;
 +-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+-----------------------+---------------------------+----------------------+-----------+
 
 
@@ -370,7 +372,7 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ; 4        ; 0 / 48 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )  ; 2.5V          ; --           ;
 ; 6        ; 0 / 60 ( 0 % )  ; 2.5V          ; --           ;
-; 7        ; 2 / 52 ( 4 % )  ; 3.3V          ; --           ;
+; 7        ; 3 / 52 ( 6 % )  ; 3.3V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % ) ; 2.5V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
@@ -386,7 +388,7 @@ The pin-out file can be found in C:/Users/gillj/Documents/AGSTU/Intro/intro_uppg
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A7       ; 445        ; 7        ; KEY_2_pin                                      ; input  ; 3.3 V Schmitt Trigger ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A8       ; 447        ; 7        ; LED_0_pin                                      ; output ; 3.3-V LVTTL           ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; A9       ; 449        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A10      ; 439        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -882,7 +884,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-----------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name ; Entity Name     ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-----------------+--------------+
-; |intro_uppgift_2           ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 2    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |intro_uppgift_2    ; intro_uppgift_2 ; work         ;
+; |intro_uppgift_2           ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 3    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0          ; |intro_uppgift_2    ; intro_uppgift_2 ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+---------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -893,43 +895,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name      ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
 ; LED_0_pin ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; KEY_1_pin ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; KEY_1_pin ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; KEY_2_pin ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+-------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                        ;
-+-------------------------+-------------------+---------+
-; Source Pin / Fanout     ; Pad To Core Index ; Setting ;
-+-------------------------+-------------------+---------+
-; KEY_1_pin               ;                   ;         ;
-;      - LED_0_pin~output ; 1                 ; 6       ;
-+-------------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; KEY_1_pin           ;                   ;         ;
+;      - LED_0_pin~0  ; 0                 ; 6       ;
+; KEY_2_pin           ;                   ;         ;
+;      - LED_0_pin~0  ; 0                 ; 6       ;
++---------------------+-------------------+---------+
 
 
-+------------------------------------------------+
-; Routing Usage Summary                          ;
-+-----------------------+------------------------+
-; Routing Resource Type ; Usage                  ;
-+-----------------------+------------------------+
-; Block interconnects   ; 5 / 148,641 ( < 1 % )  ;
-; C16 interconnects     ; 4 / 5,382 ( < 1 % )    ;
-; C4 interconnects      ; 12 / 106,704 ( < 1 % ) ;
-; Direct links          ; 0 / 148,641 ( 0 % )    ;
-; Global clocks         ; 0 / 20 ( 0 % )         ;
-; Local interconnects   ; 0 / 49,760 ( 0 % )     ;
-; NSLEEPs               ; 0 / 500 ( 0 % )        ;
-; R24 interconnects     ; 3 / 5,406 ( < 1 % )    ;
-; R4 interconnects      ; 8 / 147,764 ( < 1 % )  ;
-+-----------------------+------------------------+
++-----------------------------------------------+
+; Routing Usage Summary                         ;
++-----------------------+-----------------------+
+; Routing Resource Type ; Usage                 ;
++-----------------------+-----------------------+
+; Block interconnects   ; 7 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 0 / 5,382 ( 0 % )     ;
+; C4 interconnects      ; 6 / 106,704 ( < 1 % ) ;
+; Direct links          ; 0 / 148,641 ( 0 % )   ;
+; Global clocks         ; 0 / 20 ( 0 % )        ;
+; Local interconnects   ; 0 / 49,760 ( 0 % )    ;
+; NSLEEPs               ; 0 / 500 ( 0 % )       ;
+; R24 interconnects     ; 0 / 5,406 ( 0 % )     ;
+; R4 interconnects      ; 3 / 147,764 ( < 1 % ) ;
++-----------------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 1.00) ; Number of LABs  (Total = 1) ;
+; Number of Logic Elements  (Average = 1.00) ; Number of LABs  (Total = 2) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 1                           ;
+; 1                                          ; 2                           ;
 ; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
@@ -951,21 +956,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 1.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 1.00) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 1                           ;
+; 1                                           ; 2                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 1.00) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
+; 1                                               ; 2                           ;
 +-------------------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                       ;
++---------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 1.00) ; Number of LABs  (Total = 2) ;
++---------------------------------------------+-----------------------------+
+; 0                                           ; 0                           ;
+; 1                                           ; 0                           ;
+; 2                                           ; 1                           ;
++---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------+
@@ -1024,12 +1040,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 2         ; 0            ; 2         ; 0            ; 0            ; 2         ; 2         ; 0            ; 2         ; 2         ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 2         ; 0            ; 0            ;
+; Total Pass         ; 3         ; 0            ; 3         ; 0            ; 0            ; 3         ; 3         ; 0            ; 3         ; 3         ; 0            ; 0            ; 0            ; 0            ; 2            ; 0            ; 0            ; 2            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 3         ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 2            ; 0         ; 2            ; 2            ; 0         ; 0         ; 2            ; 0         ; 0         ; 2            ; 2            ; 2            ; 2            ; 1            ; 2            ; 2            ; 1            ; 2            ; 2            ; 2            ; 2            ; 2            ; 2            ; 2            ; 2            ; 2            ; 0         ; 2            ; 2            ;
+; Total Inapplicable ; 0         ; 3            ; 0         ; 3            ; 3            ; 0         ; 0         ; 3            ; 0         ; 0         ; 3            ; 3            ; 3            ; 3            ; 1            ; 3            ; 3            ; 1            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ; 3            ; 0         ; 3            ; 3            ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; LED_0_pin          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; KEY_1_pin          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; KEY_2_pin          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -1129,20 +1146,21 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
-Warning (169177): 1 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+Warning (169177): 2 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin KEY_1_pin uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd Line: 15
+    Info (169178): Pin KEY_2_pin uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd Line: 16
 Info (144001): Generated suppressed messages file C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/output_files/intro_uppgift_2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
     Info: Peak virtual memory: 1254 megabytes
-    Info: Processing ended: Thu Aug 17 14:39:09 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Processing ended: Thu Aug 17 15:18:25 2017
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
