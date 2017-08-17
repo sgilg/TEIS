@@ -21,9 +21,9 @@ VCU8GcB?^@CXTmKT00e<UT0
 !s100 >`LSRFA1OWW5mo2Yi9HBb2
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1502972920
+Z7 !s110 1502973137
 !i10b 1
-Z8 !s108 1502972920.000000
+Z8 !s108 1502973136.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
 Z10 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
 !i113 1
@@ -62,9 +62,9 @@ R6
 31
 R7
 !i10b 1
-R8
-Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
-Z17 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+Z16 !s108 1502973137.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+Z18 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
 !i113 1
 R11
 R12
@@ -80,9 +80,9 @@ R6
 31
 R7
 !i10b 1
-R8
 R16
 R17
+R18
 !i113 1
 R11
 R12

@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
--- DATE "08/17/2017 14:28:24"
+-- DATE "08/17/2017 14:39:30"
 
 -- 
 -- Device: Altera 10M50DAF484C7G Package FBGA484
@@ -94,8 +94,8 @@ ENTITY 	intro_uppgift_2 IS
 END intro_uppgift_2;
 
 -- Design Ports Information
--- LED_0_pin	=>  Location: PIN_D6,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- KEY_1_pin	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+-- LED_0_pin	=>  Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+-- KEY_1_pin	=>  Location: PIN_B8,	 I/O Standard: 3.3 V Schmitt Trigger,	 Current Strength: Default
 
 
 ARCHITECTURE structure OF intro_uppgift_2 IS
@@ -145,7 +145,7 @@ PORT MAP (
 	devclrn => ww_devclrn,
 	devpor => ww_devpor);
 
--- Location: LCCOMB_X44_Y41_N8
+-- Location: LCCOMB_X1_Y1_N24
 \~QUARTUS_CREATED_GND~I\ : fiftyfivenm_lcell_comb
 -- Equation(s):
 -- \~QUARTUS_CREATED_GND~I_combout\ = GND
@@ -158,7 +158,7 @@ GENERIC MAP (
 PORT MAP (
 	combout => \~QUARTUS_CREATED_GND~I_combout\);
 
--- Location: IOOBUF_X22_Y39_N30
+-- Location: IOOBUF_X46_Y54_N2
 \LED_0_pin~output\ : fiftyfivenm_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -170,7 +170,7 @@ PORT MAP (
 	devoe => ww_devoe,
 	o => \LED_0_pin~output_o\);
 
--- Location: IOIBUF_X22_Y39_N22
+-- Location: IOIBUF_X46_Y54_N29
 \KEY_1_pin~input\ : fiftyfivenm_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
