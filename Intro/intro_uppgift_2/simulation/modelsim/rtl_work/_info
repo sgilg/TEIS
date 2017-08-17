@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim
+Eintro_uppgift_2
+Z1 w1502962611
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd
+Z5 FC:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd
+l0
+L13
+VCU8GcB?^@CXTmKT00e<UT0
+!s100 >`LSRFA1OWW5mo2Yi9HBb2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1502972920
+!i10b 1
+Z8 !s108 1502972920.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
+Z10 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/intro_uppgift_2.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+DEx4 work 15 intro_uppgift_2 0 22 CU8GcB?^@CXTmKT00e<UT0
+l24
+L23
+VjD6IU_bH5O]2FiDT@5hTF2
+!s100 L8;k6hIj]WcR;AUEF3Xbz1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eintro_uppgift_2_vhd_tst
+Z13 w1502971671
+R2
+R3
+R0
+Z14 8C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht
+Z15 FC:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht
+l0
+L31
+V2lZnJ1z8iTd=Uk6DL:J?z1
+!s100 f210KcN_J8E<JE`g3W5fK2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+Z17 !s107 C:/Users/gillj/Documents/AGSTU/Intro/intro_uppgift_2/simulation/modelsim/intro_uppgift_2.vht|
+!i113 1
+R11
+R12
+Aintro_uppgift_2_arch
+R2
+R3
+DEx4 work 23 intro_uppgift_2_vhd_tst 0 22 2lZnJ1z8iTd=Uk6DL:J?z1
+l44
+L33
+VaJODEIMC@:XDZF6@i63HQ2
+!s100 Qz:o5b@6M1?EIFNeh]=UG0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

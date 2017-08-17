@@ -1,0 +1,5 @@
+|intro_uppgift_2
+KEY_1_pin => LED_0_pin.DATAIN
+LED_0_pin << KEY_1_pin.DB_MAX_OUTPUT_PORT_TYPE
+
+
